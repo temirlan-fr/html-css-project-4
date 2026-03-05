@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gainsboro;
+    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.item {
+    border-radius: 8px;
+}
+
+.gridcont {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 175px 175px 175px 175px;
+    gap: 25px;
+    grid-template-areas: 
+    "box-1 box-2 box-2 box-3"
+    "box-1 box-2 box-2 box-3"
+    "box-4 box-5 box-6 box-3"
+    "box-4 box-7 box-8 box-8"
+}
+
+#item1 {
+    background-color: rgb(250, 229, 201);
+    grid-area: box-1;
+    height: 345px;
+}
+
+#item2 {
+    background-color: #6735c4;
+    grid-area: box-2;
+    height: 265px;
+}
+
+#item3 {
+    background-color: #dacffcff;
+    grid-area: box-3;
+    height: 490px;
+    overflow: hidden;
+}
+
+#item4 {
+    background-color: rgb(247, 186, 74);
+    grid-area: box-4;
+    height: 345px;
+    margin-top: -30px;
+} 
+
+#item5 {
+    background-color: #ffffffff;
+    grid-area: box-5;
+    height: 200px;
+    margin-top: -110px;
+    overflow: hidden;
+}
+
+#item6 {
+    background-color: rgb(247, 186, 74);
+    grid-area: box-6;
+    height: 200px;
+    margin-top: -110px;
+    overflow: hidden;
+}
+
+#item7 {
+    background-color: #ffffffff;
+    grid-area: box-7;
+    height: 200px;
+    margin-top: -85px;
+}
+
+#item8 {
+    background-color: #6735c4;
+    grid-area: box-8;
+    height: 200px;
+    margin-top: -85px;
+}
+
+
+
+@media (max-width: 700px) {
+    .gridcont {
+        grid-template-columns: 200px;
+        grid-template-areas:
+        "box-1"
+        "box-2"
+        "box-3"
+        "box-4"
+        "box-5"
+        "box-6"
+        "box-7"
+        "box-8";
+    }
+
+    #item2, #item3, #item4, #item8 {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+}
+
+/* ITEM 1 */
+#item1 {
+    padding: 65px 22px;
+}
+
+#item1 p {
+    font-size: 30px;
+    letter-spacing: -2.5px;
+    line-height: 0.9;
+}
+
+#item1 i {
+    color: rgb(133, 59, 230);
+}
+
+#item1 img {
+    width: 145px;
+    margin: 15px 0 0 5px;
+    cursor: pointer;
+}
+
+
+/* ITEM 2 */
+#item2 {
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.eknshi1 {
+    font-size: 47px;
+}
+
+#item2 span {
+    color: rgb(238, 186, 45);
+}
+
+#item2 img {
+    width: 130px;
+    margin: 5px 0 20px 0;
+}
+
+.eknshi2 {
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 0;
+    margin: -16px;
+
+    font-family: "Roboto", sans-serif; 
+    font-weight: 100;                
+    font-stretch: normal;              
+    letter-spacing: normal;            
+    line-height: 1.4;               
+}
+
+
+
+/* ITEM 3 */
+.ush1 {
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    padding: 40px 0 0 25px;
+}
+
+#item3 img {
+    width: 325px;
+    padding: 5px 25px;
+}
+
+.ush2 {
+    font-size: 15px;
+    margin: 20px 0 0 25px;
+}
+
+
+
+/* ITEM 4 */
+#item4 p {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 20px 0 0 18px;
+}
+
+#item4 img {
+    width: 175px;
+    margin: 18px;
+}
+
+
+
+/* ITEM 5 */
+#item5 img {
+    width: 250px;
+    margin: 15px 0 0 17px;
+}
+
+#item5 p {
+    font-size: 24px;
+    margin: 20px 0 0 20px;
+    line-height: 0.9;
+    letter-spacing: -1px;
+}
+
+
+
+/* ITEM 6 */
+#item6 p {
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 0.8;
+    margin: 18px 0 0 18px;
+}
+
+#item6 img {
+    width: 170px;
+    margin: -3px 15px 0 15px;
+}
+
+
+
+
+/* ITEM 7 */
+.zh1 {
+    font-size: 50px;
+    margin: 15px 0 0 20px;
+}
+
+.zh2 {
+    font-size: 15px;
+    margin: 5px 0 0 20px;
+}
+
+#item7 img {
+    width: 145px;
+    margin: 30px 0 0 20px;
+}
+
+
+
+
+/* ITEM 8 */
+#item8 img {
+    float: left;
+    width: 187px;
+    margin: 17px 0 0 18px;
+}
+
+#item8 p {
+    float: left;
+    color: white;
+    font-size: 30px;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    margin: 55px 0 0 10px;
+}
+
+
+
+
